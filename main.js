@@ -1,0 +1,1 @@
+console.log("BRO"),fetch("https://api.weatherapi.com/v1/forecast.json?key=ec0903201e9b40878d632646242901&q=Singapore&days=3").then((function(o){return o.json()})).then((o=>{console.log("current json"),console.log(o),console.log("focus"),console.log(o.forecast.forecastday[0].hour[13].chance_of_rain)})).catch((o=>{console.log("ERROR: ",o)}));
