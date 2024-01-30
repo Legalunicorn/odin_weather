@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!--my style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Varela+Round&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <header>
+        <h1 id="header_text">Weather</h1>
+        <input  id='search-bar' type="search"></input>
+        <button class="to-cel" data-toggle="C">°C</button>
+    </header>
+    <main>
+        <div class="content"> <!--everything, change flex direction for pc-->
+            <div class="today-content">
+
+                <div class="today-1"> <!--MAIN DISPLAY-->
+                    <p id="citycountry">Singapore, Singapore</p>
+                    <div id="current_temp">
+                        <span data-temp id="temp-num">31</span>
+                        <span data-deg id="current-deg">°C</span>
+                    </div>
+                    <span id="condition">Cloudy af</span>
+
+                </div>
+
+                <div class="today-2">
+                    <div class="box-data">
+                        <div class="line-1" id="feels-like">
+                            <span class="static-text" >Feels like: </span>
+                            <span data-temp id="feels-like-num">31</span>
+                            <span data-deg id="feels-like-deg">°C</span>
+                        </div>
+                        <div class="line-1">
+                            <span class="static-text" >Sunrise: </span>
+                            <span>7:17 am</span>
+                        </div>
+                        <div class="line-1">
+                            <span class="static-text" >Sunset: </span>
+                            <span>7:17 pm</span>
+                        </div>
+
+                    </div>
+                    <div class=" chance box-data">
+                        <div>
+                            <span class="static-text" >Chance of Rain: </span>
+                            <span id="today-chance-of-rain"> 43%</span>
+                        </div>
+                        <div>
+                            <span class="static-text" >Chance of Snow: </span>
+                            <span id="today-chance-of-snow">0%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="today-3 box-data">
+                    <div class="line-1">
+                        <span class="static-text" >Humidty: </span>
+                        <span> 90%</span>
+                    </div>
+                    <div class="line-1">
+                        <span class="static-text" >UV: </span>
+                        <span>6</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="forecast-content">
+                <class class="box-data">
+                    <p class="box-data-header">
+                        3 Day Forecast
+                    </p>
+                    <div id="forecast-data">
+                        <!-- CSS GRID-->
+                        <div></div> <!--empty def for css grid-->
+
+                        <div class="day">
+                            <p data-day="0">Mon</p>
+                            <p data-date="0">30/1</p>
+                        </div>
+                        <div class="day">
+                            <p data-day="1">Mon</p>
+                            <p data-date="1">30/1</p>
+                        </div>
+                        <div class="day">
+                            <p data-day="2">Mon</p>
+                            <p data-date="2">30/1</p>
+                        </div>
+
+                        <div>Temp</div>
+                        <div class="temp">
+                            <span data-n-day-temp="0" data-temp >31</span>
+                            <span data-deg>°C</span>
+                        </div>
+                        <div class="temp">
+                            <span data-n-day-temp="1" data-temp >31</span>
+                            <span data-deg>°C</span>
+                        </div>
+                        <div class="temp">
+                            <span data-n-day-temp="2" data-temp >31</span>
+                            <span data-deg>°C</span>
+                        </div>
+
+                        <div>Rain</div>
+                        <div data-n-day-rain="0" >80%</div>
+                        <div data-n-day-rain="1" >80%</div>
+                        <div data-n-day-rain="2" >80%</div>
+
+                    </div>
+                </class>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Source code</a>
+        <img class="git_logo" src="assets/github.svg" alt="github_svg">
+        <span>| Powered by </span>
+         <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
