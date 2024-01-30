@@ -1,4 +1,4 @@
-must haves
+must have
 location
 - name // location.name ()
 - country location.country
