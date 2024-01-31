@@ -23,4 +23,4 @@ Desktop
 ### Mobile preview
 ![mobile preview](/dist/assets/preview_mobile.png)
 
-Background image [credits]("https://www.freepik.com/free-vector/sky-background-video-conferencing_9681161.htm#query=weather%20background&position=4&from_view=keyword&track=ais&uuid=b46bba59-5dc1-4988-b7cb-ad6e71184405") 
+Background image [credits]("https://www.freepik.com") 
