@@ -14,6 +14,7 @@
     --darkblue2: #151748;
     --footer-height: 5vh;
     --header-height: 10vh;
+    --bg-image: 'assets/weather_bg.jpeg'
 }
 
 *,
@@ -38,11 +39,15 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url("assets/weather_bg.jpeg");
+    background-size: 100% 100%;
 }
 
 h1 {
     margin-left: 5%;
     margin-right: 5%;
+    letter-spacing:0.5rem;
+    font-style:italic
 }
 
 /*HEADER ELEMENTS*/
@@ -52,7 +57,7 @@ header {
     padding: 10px 10px 0 15px;
     display: flex;
     align-items: center;
-    background-color: var(--blue1);
+    /* background-color: var(--blue1); */
 }
 
 input[type=search] {
@@ -108,7 +113,7 @@ main {
     padding: 10px 15px;
     margin-bottom: 20px;
     color: var(--darkblue1);
-    background-image: linear-gradient(var(--blue1), var(--blue2));
+    /* background-image: linear-gradient(var(--blue1), var(--blue2)); */
     /* height: 85vh; */
     /* height: calc(100vh - (var(--header-height) + var(--footer-height))) */
 }
@@ -133,8 +138,8 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    background-color: var(--blue2);
-    filter: drop-shadow(5px 10px 0.3rem var(--blue1));
+    background-color: #AAD7D9;
+    filter: drop-shadow(5px 5px 0.8rem var(--blue1));
     text-align: center;
 
 }
@@ -173,6 +178,7 @@ main {
 
 .static-text {
     color: var(--darkblue1);
+    font-weight: 500;
     /* text-shadow: 0 0 3px var(--darkblue1); */
 }
 
@@ -199,8 +205,7 @@ main {
     margin-bottom: 30px;
     border-radius: 10px 20px;
     background-color: var(--blue2);
-    filter: drop-shadow(5px 10px 0.3rem var(--blue1));
-    /* filter: drop-shadow(0 0 0.75rem crimson); */
+    /* filter: drop-shadow(5px 5px 0.8rem var(--blue1)); */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -259,6 +264,7 @@ main {
 
 /*FOOTER STYLING*/
 footer {
+    font-size: 10px;
     margin-top: auto;
     display: flex;
     align-items: center;
@@ -271,8 +277,11 @@ footer {
 
 .git_logo {
     height: 20px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#credits{
+    margin-left: 10px;
 }
 
 

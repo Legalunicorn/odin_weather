@@ -1,27 +1,26 @@
-must have
-location
-- name // location.name ()
-- country location.country
-- local time*****
+# Weather Web app
 
-current
-- temp C + temp F //current.temp_c + current.temp_f
-- feels like C + feels like F //current_feelslike_c + current_feelslike_f //current.humidity
-- humidity (%)
-- UV
+Weather project fetch [weatherapi](https://www.weatherapi.com/) resources
 
+## Key Features
+1. Search for a location for forecast data
+2. Toggle between metric of imperial units
 
-forecast.forecastday[0].astro 
-.sunrise *
-.sunset 
+## Live At 
+[here](https://legalunicorn.github.io/odin_weather/)
 
-forecast.forecastday[0].day
-.daily_chance_of_rain 
-.daily_chance_of_snow
+## Preview
+Desktop
+![desktop preview](/dist/assets/preview_desktop.png)
 
 
-//forecast segment
-.forecast.forecastdat[1].day //day + 1
-.avgtemp_c + avgtemp_f
 
-Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+### Third party resources
+- [date-fns](https://date-fns.org/)
+- [google fonts](https://fonts.google.com/)
+- [weatherapi](https://www.weatherapi.com/)
+
+### Mobile preview
+![mobile preview](/dist/assets/preview_mobile.png)
+
+Background image [credits]("https://www.freepik.com/free-vector/sky-background-video-conferencing_9681161.htm#query=weather%20background&position=4&from_view=keyword&track=ais&uuid=b46bba59-5dc1-4988-b7cb-ad6e71184405") 

@@ -3,7 +3,6 @@
 const dom = (() => {
     function updateLocation(locName, locationTitle, dateZero, dayZero,
         dateOne, dayOne, dateTwo, dayTwo) {
-        console.log(dayZero, dayOne, dayTwo)
 
         document.getElementById('citycountry').textContent = locationTitle;
         document.getElementById('citycountry').dataset.lastSearch = locName;
@@ -31,7 +30,6 @@ const dom = (() => {
 
     }
     function updateTodayForecast(rain, snow, sunrise, sunset) {
-        console.log('rain snow', rain, snow)
         document.getElementById('today-chance-of-rain').textContent = rain+ '%';
         document.querySelector('[data-n-day-rain="0"]').textContent = rain + '%';
 
@@ -40,7 +38,6 @@ const dom = (() => {
         document.getElementById('sunset').textContent = sunset;
     }
     function updateFutureForecast(dayOneRain, tempOne, dayTwoRain, tempTwo) {
-        console.log('updateFuture', dayOneRain, dayTwoRain)
         document.querySelector('[data-n-day-temp="1"]').textContent = tempOne;
         document.querySelector('[data-n-day-rain="1"]').textContent = dayOneRain  + '%';
         document.querySelector('[data-n-day-temp="2"]').textContent = tempTwo;
