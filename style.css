@@ -30,7 +30,11 @@ img {
     width: auto;
 }
 
-a {
+a,
+a:visited,
+a:focus,
+a:active {
+    color: #eee;
     text-decoration: none;
     margin-left: 5px;
 }
