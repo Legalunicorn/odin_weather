@@ -44,10 +44,12 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("assets/weather_bg.jpeg");
-    background-size: 100% 100%;
+    background-size: 300% 100%;
 }
 
 h1 {
+    opacity: 70%;
+    font-size: 1.8rem;
     margin-left: 5%;
     margin-right: 5%;
     letter-spacing:0.5rem;
@@ -142,10 +144,13 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    background-color: #AAD7D9;
+    background-color: rgb(170, 215, 217,0.6);
     filter: drop-shadow(5px 5px 0.8rem var(--blue1));
     text-align: center;
-
+}
+.today-1:hover{
+    transform: scale(1.03);
+    transition: 100ms ease-in-out;
 }
 
 #citycountry {
@@ -208,7 +213,7 @@ main {
     padding: 12px 15px;
     margin-bottom: 30px;
     border-radius: 10px 20px;
-    background-color: var(--blue2);
+    background-color: rgb(170, 215, 217,0.6);
     /* filter: drop-shadow(5px 5px 0.8rem var(--blue1)); */
     display: flex;
     flex-direction: column;
@@ -340,5 +345,16 @@ footer {
     #forecast-data {
         grid-row-gap: 90px;
     }
+    body{
+        background-size: 120% 100%;
+    }
 
+}
+@media(min-width: 1300px){
+    :root{
+        font-size: 26px;
+    }
+    body{
+        background-size:100% 120%;
+    }
 }
