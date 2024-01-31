@@ -16,15 +16,15 @@
 <body>
     <header>
         <h1 id="header_text">WEATHER</h1>
-        <input  id='search-bar' type="search"></input>
-        <button class="to-cel" data-toggle="C">°C</button>
+        <input placeholder="Search..." id='search-bar' type="search"></input>
+        <button data-deg class="to-cel" data-toggle="C">°C</button>
     </header>
     <main>
         <div class="content"> <!--everything, change flex direction for pc-->
             <div class="today-content">
 
                 <div class="today-1"> <!--MAIN DISPLAY-->
-                    <p id="citycountry">Singapore, Singapore</p>
+                    <p data-last-search id="citycountry">Singapore, Singapore</p>
                     <div id="current_temp">
                         <span data-temp id="temp-num">31</span>
                         <span data-deg id="current-deg">°C</span>
@@ -64,12 +64,12 @@
 
                 <div class="today-3 box-data">
                     <div class="line-1">
-                        <span class="static-text" >Humidty: </span>
+                        <span  class="static-text" >Humidty: </span>
                         <span class="" id="humidity"> 90%</span>
                     </div>
                     <div class="line-1">
                         <span class="static-text" >UV: </span>
-                        <span class="" id="humidity">6</span>
+                        <span class="" id="uv">6</span>
                     </div>
 
                 </div>
@@ -98,22 +98,22 @@
 
                         <div>Temp</div>
                         <div class="temp">
-                            <span data-n-day-temp="0" data-temp >31</span>
-                            <span data-deg>°C</span>
+                            <span class="dynamic-text" data-n-day-temp="0" data-temp >31</span>
+                            <span  class="dynamic-text" data-deg>°C</span>
                         </div>
                         <div class="temp">
-                            <span data-n-day-temp="1" data-temp >31</span>
-                            <span data-deg>°C</span>
+                            <span class="dynamic-text"  data-n-day-temp="1" data-temp >31</span>
+                            <span class="dynamic-text"  data-deg>°C</span>
                         </div>
                         <div class="temp">
-                            <span data-n-day-temp="2" data-temp >31</span>
-                            <span data-deg>°C</span>
+                            <span  class="dynamic-text" data-n-day-temp="2" data-temp >31</span>
+                            <span  class="dynamic-text" data-deg>°C</span>
                         </div>
 
                         <div>Rain</div>
-                        <div data-n-day-rain="0" >80%</div>
-                        <div data-n-day-rain="1" >80%</div>
-                        <div data-n-day-rain="2" >80%</div>
+                        <div  class="dynamic-text" data-n-day-rain="0" >80%</div>
+                        <div  class="dynamic-text" data-n-day-rain="1" >80%</div>
+                        <div  class="dynamic-text" data-n-day-rain="2" >80%</div>
 
                     </div>
                 </class>

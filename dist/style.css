@@ -60,13 +60,20 @@ input[type=search] {
     border-radius: 20px;
 
     margin: 0 5px 0 5px;
-    padding: 5px;
+    padding: 10px;
 
-    height: 1.5rem;
+    height: 2rem;
     max-width: 60%;
     width: 40%;
 
     font-family: 'Varela Round', sans-serif;
+    color: var(--darkblue1)
+}
+input:focus{
+    outline: none;
+    border:4px solid var(--darkblue1);
+    transform:  translate(-5px);
+    transition: 100ms ease-in-out
 }
 
 #search-bar {
@@ -136,7 +143,8 @@ main {
     font-size: 2rem;
     font-family: 'Alata', sans-serif;
     /* text-shadow: 2px 2px var(--darkblue1); */
-    color: #304977
+    color: #304977;
+    text-shadow: 0 0 10px rgb(198, 232, 236);
 }
 
 #current_temp {
@@ -164,11 +172,14 @@ main {
 }
 
 .static-text {
-    color: var(--darkblue1)
+    color: var(--darkblue1);
+    /* text-shadow: 0 0 3px var(--darkblue1); */
 }
 
 .dynamic-text {
-    font-size: 1.2rem;
+    color:#eee;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px var(--darkblue1)
 }
 
 .today-2 {
@@ -214,6 +225,9 @@ main {
     padding-left: 20px;
     padding-right: 15%;
 }
+.today-3 .line-1 span:nth-child(2){
+    text-shadow: 0 0 10px var(--darkblue1)
+}
 
 .line-1 {
     display: flex;
@@ -227,18 +241,20 @@ main {
 
 .box-data-header {
     text-align: center;
-    font-size: 1.2rem;
-    color: var(--darkblue2);
+    font-size: 1.5rem;
+    color: var(--darkblue1);
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 #forecast-data {
+    font-size:18px;
     display: grid;
-    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-columns: 10% 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 /*FOOTER STYLING*/
@@ -262,7 +278,20 @@ footer {
 
 
 /* MEDIA QUERIES*/
-@media(min-width: 600px) {
+@media(max-width: 380px) {
+    :root{
+        font-size: 13px;
+    }
+}
+@media(min-width:500px){
+    :root{
+        font-size: 17px;
+    }
+    #forecast-data div,#forecast-data div span{
+        font-size: 22px
+    }
+}
+@media(min-width: 820px) {
     :root {
         font-size: 19px;
     }
@@ -275,6 +304,18 @@ footer {
 
     #forecast-data {
         grid-row-gap: 60px;
+    }
+    /* .forecast-content{
+        font-size: 10px;
+    }*/
+    input[type=search]{
+        font-size: 19px
+    }
+    #search-bar{
+        margin-right: 10%
+    }
+    header{
+        padding-right: 10%
     }
 }
 

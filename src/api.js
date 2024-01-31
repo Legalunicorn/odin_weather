@@ -37,9 +37,12 @@ const weatherAPI=(()=>{
             },
             current:{
                 temp_C:  current.temp_c,
-                temp_C: current.temp_f,
+                temp_F: current.temp_f,
+                feelsLike_c: current.feelslike_c,
+                feelsLike_f: current.feelslike_f,
                 humidity: current.humidity,
-                UV: current.UV
+                uv: current.uv,
+                condition: current.condition.text
             },
             todayForecast:{
                 sunrise: forecast_day_0.astro.sunrise,
@@ -50,12 +53,12 @@ const weatherAPI=(()=>{
             day1Forecast:{
                 day1TempC: forecast_day_1.avgtemp_c,
                 day1TempF: forecast_day_1.avgtemp_f,
-                dat1Rain: forecast_day_1.daily_chance_of_rain
+                day1Rain:  forecast_day_1.daily_chance_of_rain
             },
             day2Forecast:{
                 day2TempC: forecast_day_2.avgtemp_c,
                 day2TempF: forecast_day_2.avgtemp_f,
-                dat2Rain: forecast_day_2.daily_chance_of_rain
+                day2Rain:  forecast_day_2.daily_chance_of_rain
             }
         } 
     return data   

@@ -1,12 +1,31 @@
+import handler from './handler'
+handler.onLoad('london','C');
+
+
+
+
 //import {weatherApp} from "./handler"
 
-import weatherAPI from './api'
+// import weatherAPI from './api'
 
-console.log('bye');
-weatherAPI.GET_ALL_DATA("Singapore")
-.then((response)=>{
-    console.log('hi',response)
-})
+
+// console.log('bye');
+// weatherAPI.GET_ALL_DATA("new york city")
+// .then((response)=>{
+//     console.log('hi',response)
+// })
+
+import {format,addDays,getDay} from 'date-fns';
+// const today = new Date('2024-01-31 10:02')
+// const test = format(today,'M/dd')
+// const tmr = format(addDays(test,1),'M/dd')
+// console.log(test)
+// console.log(tmr)
+// console.log(format(getDay(tmr),'E'))
+
+
+
+
 // console.log(beef)
 
 // console.log(weatherAPI.GET_ALL_DATA('Singapore'))
