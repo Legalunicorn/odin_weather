@@ -23,4 +23,4 @@ Desktop
 ### Mobile preview
 ![mobile preview](/dist/assets/preview_mobile.png)
 
-Background image [credits]("https://www.freepik.com") 
+<!-- Background image [credits]("https://www.freepik.com")  -->
